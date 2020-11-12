@@ -11,4 +11,8 @@ export default createGlobalStyle`
         color: #FFF;
         font-family: Roboto, Arial, Helvetica, sans-serif;
     }
+
+    button {
+        font-family: Roboto, Arial, Helvetica, sans-serif;
+    }
 `;
