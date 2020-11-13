@@ -3,11 +3,10 @@ import { shade } from 'polished';
 
 export const Container = styled.div`
     text-align: center;
-    width: 800px;
-    height: auto;
+    max-width: 500px;
+    width: 100%;
     margin: 0 auto;
-    padding: 10px;
-    position: relative;
+
 
     a {
         text-decoration: none;
@@ -20,15 +19,21 @@ export const Container = styled.div`
 `;
 
 export const CharacterInfo = styled.div`
+    margin: 1vh;
     border-radius: 10px;
     border-color: #808080;
     border: 1px solid;
     background: #312e38;
-    width: 800px;
-    padding: 40px 0;
-
+    padding: 20px 0;
+    max-width: 500px;
+    
     h1 {
         font-size: 28px;
+        color: #ff9000;
+    }
+
+    p {
+        font-size: 20px;
         color: #ff9000;
     }
 
@@ -41,8 +46,8 @@ export const CharacterInfo = styled.div`
 export const Button = styled.button`
     background: #ff9000;
     margin-left: 20px;
-    margin-top: 30px;
-    margin-bottom: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     height: 44px;
     border-radius: 10px;
     border: 0;

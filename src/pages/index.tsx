@@ -55,10 +55,10 @@ export default function Home() {
         <Link href={`character/${randomChar}`}>
           <RButton type="button">Random Character</RButton>
         </Link>
-        { data ? <h1>Total amount: {data.info.count}</h1> : null }
+        { data ? <h1>Total amount: {data.info.count}</h1> : <h1>Total amount: 0</h1> }
       </Header>
       
-      <div>
+      <body>
         {data ? <CharacterList>
           {data.results.map(character => {
             return (
@@ -71,7 +71,7 @@ export default function Home() {
             )
           })}
         </CharacterList> : null}
-      </div>
+      </body>
           { data ?
               <Paginate>
                 { data.info.prev ? 

@@ -27,14 +27,14 @@ export default function CharacterPage() {
             <CharacterInfo>
             { character ? 
                 <div>
-                    <h1>Name: {character.name}</h1>
+                    <h1>{character.name}</h1>
                     <img src={character.image}></img>
-                    <h1>Species: {character.species}</h1>
-                    <h1>Gender: {character.gender}</h1>
-                    <h1>Status: {character.status}</h1>
-                    { character.type ? <h1>Type: {character.type}</h1> : null }
+                    <p>Species: {character.species}</p>
+                    <p>Gender: {character.gender}</p>
+                    <p>Status: {character.status}</p>
+                    { character.type ? <p>Type: {character.type}</p> : null }
                     
-                    <h1>Location: {character.location.name}</h1>
+                    <p>Location: {character.location.name}</p>
                 </div>
                  : null }
             </CharacterInfo>
