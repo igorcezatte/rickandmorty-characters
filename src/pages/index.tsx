@@ -12,13 +12,13 @@ export default function Home() {
 
   const randomChar = Math.floor((Math.random() * 671) + 1);
 
-  // useEffect(() => {
-  //     if(!data) {
-  //         api.get(`https://rickandmortyapi.com/api/character/?name=`).then((response) => {
-  //             setData(response.data)
-  //         })
-  //     }
-  // }, []);
+  useEffect(() => {
+      if(!data) {
+          api.get(`https://rickandmortyapi.com/api/character/?name=`).then((response) => {
+              setData(response.data)
+          })
+      }
+  }, []);
 
   function handleSearch(e: FormEvent) {
       e.preventDefault();
