@@ -83,8 +83,6 @@ export const CharacterList = styled.ul`
 
         margin: 0.5vh;
         padding: 0.4vh;
-        max-width: 20vh;
-        max-height: 25vh;
 
         cursor: pointer;
 
@@ -100,8 +98,7 @@ export const CharacterList = styled.ul`
 
         img {
             border-radius: 10px;
-            align-self: center;
-            max-height: 18vh;
+            max-height: 21vh;
             
         }
 
@@ -111,10 +108,24 @@ export const CharacterList = styled.ul`
             align-self: center;
             margin-bottom: 5px;
         }
+
+        @media (max-width: 768px) {
+        max-width: 20vh;
+        max-height: 25vh;
+
+            img {
+                align-self: center;
+                max-height: 18vh;
+            }
+        }
     }
 `;
 
 export const Paginate = styled.div`
     text-align: center;
     margin: 10px 0 30px 0;
+
+    button {
+        height: 5vh;
+    }
 `;
